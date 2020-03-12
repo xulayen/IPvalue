@@ -51,5 +51,8 @@ if __name__ == '__main__':
     filename = '../result/htmlreport'+str(date.today())+'.html'
     ftp =  open(filename, 'wb')
     runner=HTMLTestRunner(stream=ftp,title='test report',description='report')
-    runner = unittest.TextTestRunner()
+    # runner = unittest.TextTestRunner()
     runner.run(suite)
+
+
+
